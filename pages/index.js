@@ -90,7 +90,6 @@ const Index = class extends React.Component {
 				"Content-Type": "application/json; charset=utf-8",
 			}
 		})
-
 	}
 
 	onChange(prop, value) {

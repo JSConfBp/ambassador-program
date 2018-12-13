@@ -77,16 +77,11 @@ const Index = class extends React.Component {
 	}
 
 	submit () {
-		console.log('submit');
-		console.log(this.state);
-
-
 		const data = Object.entries(this.state).reduce((obj, [key, val]) => {
 			obj[key] = val.value
 
 			return obj
 		},{})
-
 
 		fetch('https://ambassador-program-service.herokuapp.com/register', {
 			method: 'post',
